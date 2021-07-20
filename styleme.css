@@ -1,0 +1,26 @@
+﻿h1
+{
+    color: blue;
+    font-family: Algerian, Arial,serif; 
+    font-size:larger;
+    font-weight:bolder;
+    font-style:oblique;
+    text-align:center
+
+}
+
+h2
+{
+    color:coral;
+    font-family:Arial;
+    font-weight:bold;
+    font-style:italic;
+}
+
+body
+{
+    background-image:url("background.jpg");
+    background-position:370px 20px;
+    font-family: sans-serif;
+    
+}
