@@ -42,7 +42,7 @@ q
 
 html {
     background: url(silverware.jpg);
-    background-size: cover;
+    background-repeat: repeat;
 }
 
 ul{
