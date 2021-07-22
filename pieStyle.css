@@ -48,3 +48,8 @@ html {
 ul{
     list-style-image:url('pie_bullet.png')
 }
+
+p {
+    color : red;
+    font-size: 14pt;
+}
