@@ -24,6 +24,7 @@ h1{
     border-width:4px;
     border-radius:20px;
     border-style:solid;
+    border-color:gray;
     margin:auto;
     width:800px;
 
@@ -70,4 +71,9 @@ font-family:Arial,sans-serif;
 
 dt{
     font-weight:bold;
+}
+
+.pagenum {
+    
+    text-align:center;
 }
