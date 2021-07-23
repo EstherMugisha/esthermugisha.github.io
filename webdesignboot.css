@@ -1,45 +1,24 @@
-﻿
-.col-xs-12.col-md-12 {
-    grid-area: Header;
+﻿header {
     background-color: #CCFFFF;
     font-weight: bold;
+    min-height: 15vh;
 }
-.col-xs-3.col-md-1 {
-    grid-area: Menu1;
+
+.row.menu {
     background-color: #003333;
     border-right: solid;
     border-right-width: thin;
     border-color: black;
     color: white;
-    
+    min-height: 5vh;
 }
 
-
-.col-xs-9.col-md-9 {
-    grid-area: Column1;
-    background-color: #003333;
-    text-align: left;
+.row.columns {
+    min-height: 50vh;
 }
 
-.col-xs-5.col-md-3 {
-    grid-area: Column2;
-    background-color: #C0C0C0;
-    text-align: left;
-    min-height: 80vh;
-}
-
-.col-xs-5.col-md-6 {
-    grid-area: Column3;
-    background-color: #E0E0E0;
-    text-align: left;
-    min-height: 80vh;
-}
-
-.col-xs-12.col-md-12 {
-    grid-area: Footer;
+footer {
     background-color: #003333;
     color: white;
+    min-height: 15vh;
 }
-
-
-
