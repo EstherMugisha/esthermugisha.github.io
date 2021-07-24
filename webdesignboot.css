@@ -22,3 +22,9 @@ footer {
     color: white;
     min-height: 15vh;
 }
+
+.row.column13small {
+    min-height: 30vh;
+}
+
+
