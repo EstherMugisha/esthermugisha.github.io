@@ -4,7 +4,7 @@ let speed=250;
 
 var timer=setInterval(displayAnimation,speed);
 window.onload=function(){
-'strict';
+'use strict';
 document.getElementById("start").onclick=startAnimation;
 document.getElementById("animation").onchange=choseAnimation;
 document.getElementById("stop").onclick=stopAnimation;
@@ -13,27 +13,29 @@ document.getElementById("turbo").onclick=turbo;
 };
 
 function choseAnimation(){
+'use strict';
 let anime=document.getElementById("animation");
 let textArea=document.getElementById("text-area");
 switch(anime.selectedIndex){
     case 0:
-        textArea.value=BLANK;
+        textArea.value=ANIMATIONS["BLANK"];
         break;
     case 1:
-        textArea.value=EXERCISE;
+        textArea.value=ANIMATIONS["EXERCISE"];
         break;
     case 2:
-        textArea.value=JUGGLER;
+        textArea.value=ANIMATIONS["JUGGLER"];
         break;
     case 3:
-        textArea.value=BIKE;
+        textArea.value=ANIMATIONS["BIKE"];
         break;
     case 4:
-        textArea.value=DIVE;
+        textArea.value=ANIMATIONS["DIVE"];
         break;  
 }  
 }
 function startAnimation(){
+    'use strict';
     if(document.getElementById("animation".selectedIndex)!=0){
         document.getElementById("start").disabled = true; 
         document.getElementById("stop").disabled = false;
@@ -48,6 +50,7 @@ function startAnimation(){
 }
 
 function displayAnimation(){
+    'use strict';
     let textArea = document.getElementById("text-area");
     textArea.value = currentAnime[frame];
     frame++;
@@ -57,6 +60,7 @@ function displayAnimation(){
 }
 
 function stopAnimation(){
+    'use strict';
     document.getElementById("stop").disabled=true;
     document.getElementById("start").disabled=false;
     document.getElementById("animation").disabled=false;
@@ -65,6 +69,7 @@ function stopAnimation(){
 }
 
 function changeFont(){
+    'use strict';
     let size=document.getElementById("fontsize");
     let textArea=document.getElementById("text-area");
     switch(size.selectedIndex){
@@ -90,6 +95,7 @@ function changeFont(){
 }
 
 function turbo(){
+    'use strict';
     let sp=document.getElementById("turbo");
     clearInterval(timer);
     if(sp.checked==true){
