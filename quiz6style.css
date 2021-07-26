@@ -1,0 +1,23 @@
+﻿.grid-container{
+    display:grid;
+    grid-template-areas:
+        'some text text'
+        'some here there';
+}
+.some{
+    grid-area:some;
+    background-color:gray;
+
+}
+.text{
+    grid-area:text;
+    background-color:darkgray;
+}
+.here{
+    grid-area:here;
+    background-color:lightgray;
+}
+.there{
+    grid-area:there;
+    background-color:gray;
+}
