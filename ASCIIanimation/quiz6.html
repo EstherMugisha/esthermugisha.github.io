@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W2D1 Quiz</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+
+    </script>
+
+    <script>
+        // write your code for the function earliestSpace() here
+        // remember it has to take 3 strings, not an array!
+        function earliestSpace(str1,str2,str3){
+            let spacechar=" ";
+            let strWinner="";
+            if(str1.indexOf(spacechar)<str2.indexOf(spacechar) && str1.indexOf(spacechar)<str3.indexOf(spacechar) ){
+                strWinner+=str1;
+            }
+            else if (str2.indexOf(spacechar)<str1.indexOf(spacechar) && str2.indexOf(spacechar)<str3.indexOf(spacechar)){
+                strWinner+=str2;
+            }
+            else{
+                strWinner+=str3;
+            }
+            return strWinner;
+        }
+    </script>
+    <script>
+        describe("earliestSpace", function () {
+            it("takes 3 strings, and returns whicherver string has a space character at the lowest index",
+                function () {
+                    assert.equal(earliestSpace("blabla bla bla", "blah blah blah", "blabla blabla"), "blah blah blah");
+                });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+
+    </script>
+</body>
+
+</html>
