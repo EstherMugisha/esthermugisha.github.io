@@ -2,49 +2,44 @@
 <html lang="en">
 
 <head>
-<title>About Me</title>
-<link href="styleme.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <title>W1D5 Q1</title>
+    <style>
+        #container {
+            padding:7px;
+            display: grid;
+            grid-template-columns: 120px 200px;
+            grid-gap: 5px;
+            max-width: 400px;;
+        }
+        .label {
+            grid-column: 1;
+        }
+        input[type="text"]{
+            grid-column:2;
+        }
+
+    </style>
 </head>
 
-
 <body>
-    <h1>About Esther Mugisha</h1>
-    <p>My name is Esther Mugisha. I love music, food, and nature</p>
-
-    <h2> My Classes at MIU</h2>
-    <ul>
-
-        <li>CS390 - FPP</li>
-        <li>CS401 - MPP</li>
-        <li>CS472 - WP</li>
-        <li>CS545 - WAA</li>
-        <li>CS572 - MWA</li>
-        <li>CS435 - Algornithms</li>
-
-    </ul>
-
-    <h2>My Favorite TV shows</h2>
-    <ol>
-        <li> All American</li>
-        <li> Vampire Diaries</li>
-        <li> The Originals</li>
-    </ol>
-
-    <h2> My Moods </h2>
-    <p>Happy<img src="happy_cat.jpg" alt="Happy"> sad<img src="sad_cat.png" alt="Sad">  </p>
-
-    <h2> Fun Facts About My Neighbors</h2>
-    <ul>
-        <li> Manju: A ball of Energy</li>
-    </ul>
-
-    <a href="https://validator.w3.org/nu/?doc=https://esthermugisha.github.io/about_me.html">
-        <img src="https://manalabs.org/img/w3c-html.png" alt="validator">
-    </a>
-
-    <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://esthermugisha.github.io/about_me.html">
-        <img src="w3c-css.png" alt="W3C CSS">
-    </a>
-
+    <form>
+        <fieldset id="container">
+            <legend>Party Info</legend>
+            <div class="label">First Name:</div>
+            <div><input type="text" name="first" /></div>
+            <div class="label">Last Name:</div>
+            <div><input type="text" name="last" /></div>
+            <div class="label">Favorite Food:</div>
+            <div>
+                <select name="food">
+                    <option>Pizza</option>
+                    <option>Ice Cream</option>
+                    <option>Burger and Fries</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
 </body>
+
 </html>
