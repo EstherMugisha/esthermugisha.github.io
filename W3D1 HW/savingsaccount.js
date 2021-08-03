@@ -23,7 +23,8 @@ class SavingsAccount extends Account{
 
     endOfMonth(){
         this.addInterest();
-        return "the interest added "+ this.toString;
+        let result= "the interest added the savings Account " + this._number + " :balance " + this._balance +" interest "+this._interest;
+        return result;
         
     }
     

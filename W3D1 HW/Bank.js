@@ -41,6 +41,10 @@ class Bank {
         }
     }
 
+    getAccount(number){
+        return this._accounts.find(acc => acc.getNumber() === number);
+        }
+
     accountReport(){
         let output="";
         for(let i=0;i<this._accounts.length;i++){
@@ -50,9 +54,11 @@ class Bank {
     }
 
     endOfMonth(){
+        let eom;
         for (let i=0;i<this._accounts;i++){
-            return this._accounts[i].endOfMonth();
+           eom+= this._accounts[i].endOfMonth();
         }
+        return eom;
     }
 
 }

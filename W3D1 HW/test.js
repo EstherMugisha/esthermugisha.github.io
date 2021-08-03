@@ -106,10 +106,7 @@ describe ("closeAccount", function(){
     )
 });
 
-let myBankarray=myBank.getAccounts();
-for (let i=0;i<myBankarray.length;i++){
-    myBankarray[i].deposit(10000);
-}
+
 
 let resultstr="Account 1: balance 0the savings Account 3 :balance 0 interest 12checking Account: 4 :balance 0 :overdraft limit 200";
 
@@ -120,9 +117,15 @@ describe ("AccountReport", function(){
     )
 });
 
-let returnString = ""+"\n"+"\ninterest added the savings Account 3 :balance 110000 interest 10"
+let returnString = "Account 1: balance 0the interest added the savings Account 3 :balance 0 interest 12Warning, low balance checking Account: 4:balance 0 :overdraft limit 200"
 describe("endOfMonth", function(){
     it(" gives status of accounts at the end of the month",function(){
+        let myBankarray=myBank.getAccounts();
+for (let i=0;i<myBankarray.length;i++){
+    let acc=myBank.getAccount(myBankarray[i].getNumber())
+    acc.deposit(10000);
+    console.log(acc);
+}
         assert.equal(myBank.endOfMonth(),returnString)
     })
 })
