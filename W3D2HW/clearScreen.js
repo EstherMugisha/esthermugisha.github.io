@@ -7,8 +7,8 @@ $(function() {
 
 });
 
-var width=10;
-var amount=1;
+var width;
+var amount;
 
 function showCircle(){
 
@@ -26,6 +26,7 @@ function showCircle(){
     }
     setInitialSize();
     timer = setInterval(growCircle, rate);
+    
 }
 
 
