@@ -34,5 +34,6 @@ function reset(){
 }
 
 function disallowCheating(){
+        "use strict";
         turnRed();
 }
