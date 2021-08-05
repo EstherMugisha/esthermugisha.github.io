@@ -31,9 +31,11 @@ function reset(){
         block.removeClass("youlose");
     }
     $("#maze").on('mouseleave',disallowCheating);
+    
 }
 
 function disallowCheating(){
         "use strict";
         turnRed();
+        
 }
