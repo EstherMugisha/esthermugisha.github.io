@@ -1,0 +1,16 @@
+<%- include('header.ejs')%>
+<body>
+    <form action="/addToCart" method="POST">
+        <div id="container">
+        <label for="name"><%= name %></label>
+        <input type="text" name="name" >
+        <label for="price"><%= price %></label>
+        <input type="text" name="price">
+        <label for="descr"><%= description %></label>
+        <input type="text" name="descr" >
+        <label for="id"><%= id %></label>
+        <input type="text" name="id" >
+        <button type="submit" id ="btn"><%= add %></button>
+        </div>
+    </form>
+<%- include('footer.ejs') %>
