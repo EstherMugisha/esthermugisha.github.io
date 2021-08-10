@@ -1,0 +1,12 @@
+<%- include('header.ejs')%>
+<ul class="shopcart"></ul>
+ <% for (const i in cart) { %>
+    <ul>
+        <li>name: <%=i%></li>
+        <li>quantity: <%=cart[i].quantity%></li>
+        <li>total price<%= cart[i].price%></li>
+    </ul>
+<% } %>
+</ul>
+
+<%- include('footer.ejs') %>
